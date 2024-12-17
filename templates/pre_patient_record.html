@@ -1,0 +1,44 @@
+<!--<!doctype html>
+<html>
+<head></head>
+<body>
+  <div class="one">
+      <div class="content" align="center">
+      <br>
+          <div class="contentbar">
+<form action="{{ url_for('patient_record')}}" method="post" autocomplete="off">
+<div class="msg">{{ msg }}</div>
+<input type="email" name="mail_id" class='textbox' placeholder="Enter patient mail_id" class="textbox" required><br><br>
+<input type="submit" class="btn" value="view-records">
+  </form>
+</div></div></div>
+</body>
+</html>-->
+<html lang="en">
+    <head>
+        <title>Appointments</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body style="background-image:url('../static/hospit.jpg')">
+        <div class="one">
+            <div class="content" align="center">
+            <br>
+                <div class="contentbar">
+                    <h1>records</h1>   <br>
+                     {% block content %}
+                        <div class="border">
+
+                            <table class="worddark"><br>
+                              {% for rec in record %}
+                                    <li><b>mail_id    :  {{rec['mail_id']}} </b></li><br>
+                                    <li><b>record_id  :  {{rec['record_id']}} </b></li><br>
+                                    <li><b>record_analysis : {{rec['record_analysis']}} </b></li><br>
+                              {% endfor %}
+
+                        </div>
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> make an appointment </title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body >
+        <div class="one">
+</div>
+        <div class="registercontent" align="center">
+            <div class="registertop">
+                <h1>Book your appointment</h1>
+            </div><br><br>
+            <div class="registerbottom">
+              <form action="{{ url_for('makeappointment') }}" method="post" autocomplete="off">
+            <div class="msg">{{ msg }}</div>
+            <input type="number" name="doctor_id" placeholder="Enter doctor id" class="textbox" id="doctor_id" required><br><br>
+            <input type="date" name ="date_appointment" placeholder="Enter the date for appointment" id="date_appointment" required><br><br>
+            <input type="submit" class="btn" value="book appointment"><br>
+              </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>AIM HOSPITAL</title>
+    <link rel="stylesheet" href="../static/patient_home_page.css">
+  </head>
+  <header>
+  <body style="background-image:url('../static/hospital2.jpg')">
+    <div id="top-border">AIM HOSPITAL</div>
+    <ul id="unordered-list-1">
+      <li></li>
+      <li></li>
+      <li><a href="{{url_for('aboutus')}}">About-us</a></li>
+      <li><a href="{{url_for('donation')}}">Donation</a>
+    </li>
+      <li><a href="{{url_for('doctors_data')}}">Doctors-profiles</a></li>
+      <li><a href="#">My account</a>
+      <ul>
+        <li><a href="{{url_for('display')}}">Display</a></li>
+        <li><a href="{{url_for('update')}}">Update</a></li>
+        <li><a href="{{url_for('logout')}}">Logout</a></li>
+      </ul></li>
+      <li><a href="#">Login</a>
+        <ul>
+          <li><a href="{{url_for('login')}}">Patient</a></li>
+          <li><a href="{{ url_for('doctor_login')}}">Doctor</a></li>
+        </ul></li>
+    </ul>
+    <br>
+    <br>
+  </header>
+    <div class="msg">{{ msg }}</div>
+    <div id="Appointment-box"><a href="{{url_for('makeappointment')}}">Make An Appointment</a></div>
+    <div id="Appointment_box"><a href="{{url_for('appointments')}}">My Appointment</a></div>
+  </body>
+</html>

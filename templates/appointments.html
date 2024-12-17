@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <title>My appointments</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <div class="one">
+            <div class="content" align="center">
+            <br>
+                <div class="contentbar">
+                    <h1>My appointments</h1>    <br>
+                     {% block content %}
+                        <div class="border">
+                            <table class="worddark"><br>
+
+                              {% for appo in appointment %}
+                                    <li>doctor id : {{appo['doctor_id']}}</li>
+                                    <li>date of appointment: {{appo['date_appointment']}}</li><br>
+                              {% endfor %}
+                            </table>
+                        </div>
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

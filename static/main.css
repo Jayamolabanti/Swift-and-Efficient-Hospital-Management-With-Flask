@@ -1,0 +1,450 @@
+header {
+    background-color: black;
+    height: 116px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    /* Direction of the items, can be row or column */
+    flex-direction: column;
+}
+
+
+#logo {
+    color: rgb(7, 162, 252);
+    display: inline-flex;
+    position: absolute;
+    left: 131px;
+}
+
+.body1 {
+    background-image: url("../images/090716_stjoes.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 100px 0px 100px;
+    background-size: 100% ;
+    scroll-behavior: auto;
+}
+
+/* .body2 {
+    background-image: url("../images/1st.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 100px 0px 100px;
+    background-size: 100%;
+    scroll-behavior: auto;
+} */
+
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.top-right {
+    position: absolute;
+    color: #89adb9;
+    text-align: right;
+    font-size: 90px;
+    font-weight: bold;
+    top: 400px;
+    right: 16px;
+  }
+
+  .top-left {
+    position: absolute;
+    color: #6a9bac;
+    text-align: left;
+    font-size: 90px;
+    font-weight: bold;
+    top: 525px;
+    left: 16px;
+  }
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 174, 255);
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 36px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(1, 94, 216);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(96, 158, 238);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.links {
+    width: 1510px;
+    position: absolute;
+    left: 131px;
+    top: 70px;
+}
+
+#cst_head {
+    text-align: center;
+}
+
+.form {
+  padding: 20px 0;
+  width: auto;
+  margin: auto;
+}
+.form label{
+    font-size: 20px !important;
+    margin-top: 10px;
+    
+}
+.form .text{
+    width: 100%;
+    padding: 5px 15px;
+    border: solid 2px #0051ff;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form .text1{
+    width: 100%;
+    padding: 5px 10px;
+    border: solid 1px #0a0a0a;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form .bt{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    background-color: #0077ff;
+    color: aliceblue;
+    margin-top: 10px;
+}
+.searchform {
+    position: relative;
+    padding:30px 0;
+}
+
+.psearchform {
+    position: relative;
+    left: 300px;
+    top : 500px;
+    height: 787px;
+
+}
+
+.form1 {
+    padding: 100px 0;
+    width: auto;
+    margin: auto;
+  }
+  .form1 label{
+      font-size: 18px !important;
+      margin-top: 10px;
+      color: #2d268d;
+      font-weight: bold;
+      
+  }
+  .form1 .text1{
+    width: 100%;
+    padding: 5px 10px;
+    border: solid 2px #248df0;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: black;
+    height: 33px;
+    width: 80px;
+    color: rgb(255, 0, 0);
+}
+
+pre {
+    color: red;
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.status {
+    position: absolute;
+    top: 200px;
+    padding-left: 50px;
+}
+.status h1{
+    text-align: center;
+}
+
+.astatus {
+    position: absolute;
+    top: 200px;
+    padding-left: 120px;
+}
+.astatus h1{
+    text-align: center;
+}
+
+.stat {
+    position: absolute;
+    top: 200px;
+    padding-left: 600px;
+}
+.stat h1{
+    text-align: center;
+}
+
+/* delete customer css start*/
+
+.wrapper {
+    text-align: center;
+    margin-top: 219px;
+}
+
+.deletecust {
+    display: inline-block;
+    width: 500px;
+}
+
+.deletecustheading {
+    background-color: lightgray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.deleteform {
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.taga {
+    text-decoration: none;
+}
+
+.cancelbutton {
+    float: right;
+    margin-right: 20px;
+}
+
+.decor {
+    background-color: grey;
+    color: white;
+}
+
+.confirm {
+    text-decoration-color: white;
+}
+
+
+/*delete customer css end*/
+
+
+/*footer css start*/
+
+.footer {
+    position: absolute;
+    left: 0px;
+    bottom: -196px;
+    width: 100%;
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.foot_word_edit {
+    color: rgb(229, 237, 241);
+    font-size: larger;
+}
+
+span {
+    display: block;
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.lastfooter {
+    font-size: 17;
+    display: inline;
+}
+
+.footercontent1 {
+    flex-basis: 40%;
+    text-align: start;
+}
+
+.footercontent2 {
+    flex-basis: 20%;
+    text-align: start;
+}
+
+.footercontent3 {
+    flex-basis: 30%;
+    text-align: start;
+}
+
+.footcontentinfo {
+    text-align: start;
+    color: #a8d8eb;
+}
+
+.endfooter {
+    background-color: rgb(50, 145, 233);
+}
+
+
+/*footer css end*/
+
+
+/*login css start*/
+
+.loginwrapper {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.logindiv {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.logindecor {
+    margin-bottom: 20px;
+}
+
+.logincust {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    width: 500px;
+}
+
+.loginheading {
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.registerheading {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+
+
+.regwrapper {
+    width:50%;
+    margin: auto;
+    margin-top: 10rem;
+    padding: 20px 20px;
+}
+
+.messages {
+    text-align: center;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: red;
+    font-size: larger;
+}
+.button {
+    background-color: #008CBA;; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

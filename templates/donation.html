@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>donation</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body style="background-image:url('../static/hospit.jpg')">
+    <div class="one">
+      <div class="content" align="center"><br>
+          <div class="contentbar">
+            <h1>Fill Your Details to Update</h1><br>
+  <div class="msg">{{msg}}</div>
+  <form action="{{url_for('donation')}}" method="POST" autocomplete="OFF">
+
+        <input list='donation' type="text" name="donation_id" placeholder="enter donation type" class="textbox" required>
+    <datalist id='donation'>
+      <option value='blood'>
+      <option value='plasma'>
+      <option value='kidney'>
+    </datalist>
+    <br>
+        <input type="date" name="donation_date" placeholder="enter donation_date" class="textbox"  required><br><br>
+        <input type="submit" class="btn" value="submit">
+  </form>
+</div>
+</div>
+</div>
+</body>
